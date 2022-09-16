@@ -1,0 +1,46 @@
+{
+    "name":"mohammadhosseinzadeh/laravel-otp",
+
+    "description": "The Laravel otp.",
+
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2"
+    },
+    "homepage": "https://github.com/",
+    "authors": [
+        {
+            "name": "MohammadHosseinzadeh",
+            "email": "MohammadHosseinzadeh@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+
+            "MohammadHosseinzadeh\\Laravel\\Otp\\" :"src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Otp\\Src\\OtpServiceProvider"
+            ],
+            "aliases": {
+                "Otp":"Otp\\Src\\OtpFacade\\Otp"
+            }
+        }
+    },
+
+    "config": {
+
+        "sort-packages": true
+
+    }
+
+
+}
